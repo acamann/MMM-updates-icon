@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #f7e9a8;
+  background-color: var(--nav-sidebar-bg);
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #ffffff;
@@ -36,12 +36,12 @@
 }
 
 .updates-icon-button:active {
-  background-color: #efe0ad;
+  background-color: #3b4457;
 }
 
 .updates-icon-button .fa-rotate {
   font-size: 28px;
-  color: #202124;
+  color: #f7e9a8; /* soft yellow glyph on the nav blue */
   line-height: 1;
 }
 
