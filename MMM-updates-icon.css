@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #f2c94c;
+  background-color: #f7e9a8;
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #ffffff;
@@ -36,11 +36,11 @@
 }
 
 .updates-icon-button:active {
-  background-color: #dcb93a;
+  background-color: #efe0ad;
 }
 
-.updates-icon-button .fa-exclamation {
-  font-size: 32px;
+.updates-icon-button .fa-rotate {
+  font-size: 28px;
   color: #202124;
   line-height: 1;
 }

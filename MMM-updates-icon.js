@@ -39,7 +39,7 @@ Module.register('MMM-updates-icon', {
 		button.setAttribute('role', 'button');
 		button.title = `${this.outdated.length} module update(s) available`;
 		const icon = document.createElement('i');
-		icon.className = 'fas fa-exclamation';
+		icon.className = 'fas fa-rotate';
 		button.append(icon);
 		button.addEventListener('click', () => {
 			this.popoverOpen = !this.popoverOpen;
