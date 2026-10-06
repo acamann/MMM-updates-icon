@@ -1,0 +1,72 @@
+/* MMM-updates-icon styling
+ * Yellow exclamation button pinned to the bottom of the nav dock,
+ * matching the MMM-page-indicator touch squares, plus a popover card.
+ */
+
+/* Push to the bottom of the top_left flex column (page-indicator stays on top) */
+.region.top.left .container > .module.MMM-updates-icon {
+  margin-top: auto !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+.region.top.left .module.MMM-updates-icon .module-content,
+.region.top.left .module.MMM-updates-icon .updates-icon {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.updates-icon-button {
+  width: var(--nav-sidebar-width);
+  height: var(--nav-sidebar-width);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f2c94c;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #ffffff;
+  touch-action: manipulation;
+  transition: background-color 0.15s ease;
+}
+
+.updates-icon-button:active {
+  background-color: #dcb93a;
+}
+
+.updates-icon-button .fa-exclamation {
+  font-size: 32px;
+  color: #202124;
+  line-height: 1;
+}
+
+.updates-icon-popover {
+  position: fixed;
+  left: calc(var(--nav-sidebar-width) + 12px);
+  bottom: 12px;
+  z-index: 10000;
+  max-width: 320px;
+  background-color: rgba(255, 243, 196, 0.97);
+  color: #4d4300;
+  border-radius: 12px;
+  padding: 14px 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.updates-icon-popover-title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #4d4300;
+}
+
+.updates-icon-popover-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
